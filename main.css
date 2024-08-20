@@ -1,0 +1,187 @@
+html {
+  background-color: #007bff;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #007bff;
+  position: relative;
+}
+
+.container {
+  width: 383px;
+  height: 600px;
+  border-radius: 24px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.todo-title {
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.todo-title h1 {
+  width: 164px;
+  height: 20px;
+}
+
+.todo-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 343px;
+}
+
+#todo {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 287px;
+  box-sizing: border-box;
+}
+
+/* 추가버튼 */
+#add-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-button img {
+  width: 14px;
+}
+
+#add-button:hover {
+  background-color: #0056b3;
+}
+
+#todo-list {
+  width: 343px;
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.todo-item {
+  padding: 16px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 체크박스 스타일 */
+.todo-checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid gray;
+  cursor: pointer;
+  background-color: white;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.todo-item .checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 수정버튼 & 삭제버튼 */
+.todo-item button.edit-btn,
+.todo-item button.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.todo-item button.edit-btn img,
+.todo-item button.delete-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+/* 전체삭제버튼 */
+.all-delete {
+  width: 343px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+#allDeleteBtn {
+  background: none;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.3s ease;
+}
+
+#allDeleteBtn img {
+  width: 16px;
+  height: 16px;
+}
+
+#allDeleteBtn:hover {
+  transform: scale(1.2);
+}
+
+#allDeleteBtn:hover img {
+  width: 20px;
+  height: 20px;
+}
